@@ -1,0 +1,70 @@
+# Task: Owner-Worker Live Data Exchange & Analytics Platform
+
+## Plan
+- [x] Step 1: Initialize Supabase and setup database schema
+  - [x] Initialize Supabase project
+  - [x] Create profiles table with role support
+  - [x] Create rooms table for Owner-Worker sessions
+  - [x] Create messages table for real-time chat
+  - [x] Create files table for Excel file metadata
+  - [x] Create storage bucket for Excel files
+  - [x] Setup RLS policies
+- [x] Step 2: Setup TypeScript types and database API
+  - [x] Define TypeScript interfaces for all tables
+  - [x] Create database API functions
+  - [x] Setup Supabase client
+- [x] Step 3: Create authentication system
+  - [x] Create login page
+  - [x] Create registration page with role selection
+  - [x] Setup auth context and route guards
+  - [x] Add logout functionality
+- [x] Step 4: Build Owner Dashboard
+  - [x] Display Owner's Unique ID
+  - [x] Add Worker ID input and room creation
+  - [x] Show list of connected workers
+  - [x] Show list of active rooms
+  - [x] Add analytics dashboard section
+- [x] Step 5: Build Worker Dashboard
+  - [x] Display Worker's Unique ID
+  - [x] Add Owner ID input and join room
+  - [x] Add Excel file upload interface
+  - [x] Add real-time chat panel
+- [x] Step 6: Implement Room/Chat functionality
+  - [x] Create room page with chat interface
+  - [x] Implement real-time messaging with Supabase Realtime
+  - [x] Add file upload in chat
+  - [x] Show message history
+- [x] Step 7: Implement file upload and storage
+  - [x] Setup file upload to Supabase Storage
+  - [x] Store file metadata in database
+  - [x] Add file download functionality
+  - [x] Validate Excel file formats
+- [x] Step 8: Implement Excel parsing and chart generation
+  - [x] Install xlsx library for Excel parsing
+  - [x] Install recharts for chart visualization
+  - [x] Parse Excel files and extract data
+  - [x] Generate bar charts from Excel data
+- [x] Step 9: Build analytics dashboard
+  - [x] Show uploaded files list
+  - [x] Display worker-wise charts
+  - [x] Display file-wise charts
+  - [x] Add chart interaction and detailed views
+  - [x] Real-time chart updates
+- [x] Step 10: Add design system and styling
+  - [x] Setup color scheme (blue, white, green, amber)
+  - [x] Apply consistent styling across all pages
+  - [x] Ensure responsive design
+  - [x] Add loading states and animations
+- [x] Step 11: Testing and validation
+  - [x] Run lint checks
+  - [x] Test authentication flow
+  - [x] Test room creation and joining
+  - [x] Test file upload and chart generation
+  - [x] Test real-time messaging
+
+## Notes
+- Using Supabase for backend (free tier)
+- Using username + password authentication
+- Real-time features using Supabase Realtime
+- Excel parsing with xlsx library
+- Charts with recharts library
